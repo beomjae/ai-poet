@@ -40,5 +40,5 @@ st.write("시의 주제는", content)
 # 시 작성 요청하기
 if st.button("시 작성 요청하기"):
   with st.spinner('Wait for it...'):
-    result = chain.invoke({"input": content + "에 대한 시를 써줘"})
+    result = chain.invoke({"input": content + "에 대한 시를 써줘. 시의 제목을 처음에 표시하고 시 본문을 다음에 표시해줘. 그외에 다른 내용은 더하지 말아줘."})
     st.write(result)
